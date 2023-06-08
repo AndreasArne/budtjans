@@ -1,0 +1,177 @@
+/* General */
+
+ul.dapp-gallery-list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+ul.dapp-gallery-image-list {
+   font-size: 0px;
+}
+
+ul.dapp-gallery-list li {
+   background: #fff;
+   line-height: 1;
+   margin: 0;
+   padding: 0;
+   display: inline-block;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   box-shadow: 0 0 7px rgba(0,0,0,.1);
+   padding: 10px;
+}
+ul.dapp-gallery-list li:hover {box-shadow: 0 0 14px rgba(0,0,0,.15);}
+
+
+/* three
+ul.dapp-gallery-list li {width: 31%; margin: 0 2% 2% 0;}
+ul.dapp-gallery-list li:nth-child(3n) {margin-right: 0;}*/
+
+/* four */
+ul.dapp-gallery-list li {width: 23%; margin: 0 2% 2% 0;}
+ul.dapp-gallery-list li:nth-child(4n) {margin-right: 0;}
+
+/* five
+ul.dapp-gallery-list li {width: 18%; margin: 0 2% 2% 0;}
+ul.dapp-gallery-list li:nth-child(5n) {margin-right: 0;}*/
+
+
+ul.dapp-gallery-list li a {
+   background: rgba(255,255,255,.3);
+   display: block;
+   position: relative;
+}
+
+ul.dapp-gallery-list li img {
+   width: 100%;
+   height: auto;
+}
+
+/* Gallery */
+
+.dapp-gallery-album-list {}
+
+.dapp-gallery-album-name {
+   background: rgba(255,255,255,.7);
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   position: absolute;
+   bottom: 0;
+   line-height: 1.5;
+   padding: 1em 1em;
+   text-align: center;
+   display: block;
+   width: 100%;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+   white-space: nowrap;
+}
+
+ul.dapp-gallery-list li a:hover .dapp-gallery-album-name {
+   background: rgba(255,255,255,.9);
+   padding-bottom: 1.3em;
+}
+
+/* Album */
+
+.dapp-gallery-image-list {}
+
+/* Paging */
+
+ul.dapp-gallery-paging {
+   list-style: none;
+   margin: 1em auto;
+   padding: 0;
+   text-align: center;
+   clear: both;
+}
+
+ul.dapp-gallery-paging li {
+   line-height: 1;
+   display: inline-block;
+   margin: 0 .3em 0 0;
+   text-align: center;
+}
+ul.dapp-gallery-paging li:last-child {margin-right: 0;}
+
+ul.dapp-gallery-paging li a {
+   background: #000;
+   border-radius: 50%;
+   color: #fff;
+   text-decoration: none;
+   display: block;
+   text-align: center;
+   border: 1px solid rgba(0,0,0,.2);
+   width: 1em;
+   height: 1em;
+   padding: .5em;
+}
+
+ul.dapp-gallery-paging .nav-left a, ul.dapp-gallery-paging .nav-right a {}
+
+ul.dapp-gallery-paging li.active {
+   background: transparent;
+   color: #999;
+   padding: 1em;
+   text-decoration: underline;
+}
+
+#swipebox-bottom-bar {transform: translate3d(0px, -50px, 0px); }
+#swipebox-overlay { background: none repeat scroll 0 0 rgba(13,13,13,0.9) !important; }
+#swipebox-slider .slide img { box-shadow: 0px 0px 10px #000000;}
+
+
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+   ul.dapp-gallery-paging li {margin-right: 1em;}
+   ul.dapp-gallery-paging li a {padding: 1em;}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+   
+   ul.dapp-gallery-paging li a {width: auto; height: auto; border-radius: 5px;}
+   
+   /* Paging */
+   ul.dapp-gallery-paging li {display: none;}
+   ul.dapp-gallery-paging li.active {
+      display: inline-block;
+      width: auto;
+   }
+   ul.dapp-gallery-paging .nav-left, ul.dapp-gallery-paging .nav-right {display: inline-block; width: 30%;}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+   /* Gallery */
+   ul.dapp-gallery-list li {
+      display: block;
+      width: 48%;
+      float: left;
+      margin: 0 2% 2% 0;
+   }
+   ul.dapp-gallery-list li:nth-child(3n), ul.dapp-gallery-list li:nth-child(4n), ul.dapp-gallery-list li:nth-child(5n) {margin: 0 2% 2% 0;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	/* Gallery */
+   ul.dapp-gallery-list li {
+      display: block;
+      width: 100%;
+      margin: 0 0 2% 0;
+   }
+}

@@ -1,0 +1,38 @@
+@import url(26705.css);
+
+
+#main-content {
+padding: 10px 0 20px 0;
+}
+
+#main-content .one-third p {
+   margin-top: 1em;
+   font-size: 1em;
+}
+
+#main-bottom .columns h3 {color: #2ecc71;}
+
+#cta {padding: 30px 0 20px 0;}
+
+#cta .button {
+width: 100%;
+box-sizing: border-box;   
+}
+
+.rounded { border-radius:150px;border:8px solid #fff; max-width:90% !important; }
+
+
+/* Larger than standard 960 (devices and browsers) */
+@media only screen and (min-width: 959px) {
+
+}
+
+
+/* Tablet and larger */
+@media only screen and (min-width: 768px) {
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}

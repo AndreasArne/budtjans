@@ -1,0 +1,81 @@
+/* * * * *  * * * * * * * * * * * * * * * * *
+ *											*
+ *											*
+ *				The paging css				*
+ *				Version 2					*
+ *											*
+ *											*
+ * * *  * * * * * * * * * * * * * * * * * * */
+.paging-wrapper_v2 .paging-clear {
+    clear: left;
+}
+
+.paging-wrapper_v2 {
+    text-shadow: 0 1px 0 #fff;
+}
+
+.paging-wrapper_v2 ul.paging-list {
+    border: 0 none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.paging-wrapper_v2 ul.paging-list li {
+    border: 1px solid #ddd;
+    float: left;
+    margin: 0 2px 0 0;
+    min-width: 25px;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    list-style: none;
+}
+
+.paging-wrapper_v2 ul.paging-list li.current {
+    border-color: gray;
+}
+
+.paging-wrapper_v2 ul.paging-list li > a {
+    background: #f3f3f3;
+    color: #222;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+.paging-wrapper_v2 ul.paging-list li > a:hover {background: #fcfcfc;}
+
+.paging-wrapper_v2 ul.paging-list li > span {
+    display: block;
+    padding: 5px;
+}
+
+.paging-wrapper_v2 ul.paging-list li.current.disable span {
+    background: gray;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #222;
+}
+
+.paging-wrapper_v2 ul.paging-list li.disable span {
+    background: #f3f3f3;
+    color: #888;
+}
+
+.paging-wrapper_v2 ul.paging-list li.next {
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topright: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.paging-wrapper_v2 ul.paging-list li.prev {
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
